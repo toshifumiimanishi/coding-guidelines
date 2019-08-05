@@ -8,13 +8,11 @@
 
 ## HTML
 
+WHATWG の HTML Living Standard に準拠する。
+
 ### 属性の記述順
 属性値は class、id、data-*、その他の属性の順序で記述する。
 
-```html
-<!-- img 要素の場合 -->
-<img class="" src="" alt="">
+## CSS
 
-<!-- a 要素の場合 -->
-<a id="" href=""></a>
-```
+## JavaScript
