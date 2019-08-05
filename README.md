@@ -8,7 +8,7 @@
 
 ## HTML
 
-WHATWG の HTML Living Standard に準拠する。
+WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/multipage/) に準拠する。
 
 ### 属性の記述順
 属性値は class、id、data-*、その他の属性の順序で記述する。
