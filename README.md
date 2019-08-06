@@ -16,7 +16,7 @@ HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/
 
 ### target="_blank" で開くリンクには rel="noopener" をつける
 
-`target="_blank"` で開いたタブは、`window.opener` を使って親のタブを操作できるため **フィッシング詐欺攻撃の脆弱性** がある。
+`target="_blank"` で開いたページは、`window.opener` を使って親のページを操作できるため **フィッシング詐欺攻撃の脆弱性** がある。`rel="noopener"` を指定すれば、リンクをクリックして開いたページから `window.opener` で親のページを参照できなくなる。
 
 ## CSS
 
