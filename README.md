@@ -8,10 +8,15 @@
 
 ## HTML
 
-WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/multipage/) に準拠する。
+HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/multipage/) に準拠する。
 
 ### 属性の記述順
+
 属性値は class、id、data-*、その他の属性の順序で記述する。
+
+### target="_blank" で開くリンクには rel="noopener" をつける
+
+`target="_blank"` で開いたタブは、`window.opener` を使って親のタブを操作できるため **フィッシング詐欺攻撃の脆弱性** がある。
 
 ## CSS
 
