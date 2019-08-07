@@ -8,6 +8,12 @@
 ## HTML
 HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/multipage/) に準拠する。
 
+---
+**【column】 W3G vs WHATWG の終焉**  
+W3C と WHATWG の[合意](https://www.w3.org/blog/news/archives/7753)により、W3C は HTML と DOM に関する標準策定をやめ、今後は WHATWG が策定する HTML Living Standard が唯一の標準となる。
+
+---
+
 ### 属性の記述順
 属性値は class、id、data-*、その他の属性の順序で記述する。
 
@@ -24,6 +30,10 @@ HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/
 WAI-ARIAは、ブラウザや支援技術が認識できる意味論を追加する、ユーザーの理解を補助する技術である。真に意味論の提供は、HTML5 ベースのセマンティクスを使用すべき。ベンダーのサポート状況を鑑みて選定する。
 
 ## CSS
+
+### CSS 設計
+
+### クラスの命名規則
 
 ### 同じ宣言ブロック内に異なるセレクタの宣言を記述しない
 Sass の機能でセレクタを入れ子構造にする場合、ひとつの宣言ブロックに異なるセレクタのスタイルを宣言しない。これはセレクタを一元管理できるメリットがある。
