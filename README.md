@@ -8,9 +8,6 @@
 ## HTML
 HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/multipage/) に準拠する。
 
-**【column】 W3G vs WHATWG の終焉**  
-W3C と WHATWG の[合意](https://www.w3.org/blog/news/archives/7753)により、W3C は HTML と DOM に関する標準策定をやめ、今後は WHATWG が策定する HTML Living Standard が唯一の標準となる。
-
 ### 属性の記述順
 属性値は class、id、data-*、その他の属性の順序で記述する。
 
@@ -29,6 +26,7 @@ WAI-ARIAは、ブラウザや支援技術が認識できる意味論を追加す
 ## CSS
 
 ### CSS 設計
+[FLOCSS](https://github.com/hiloki/flocss) をベースに各プロジェクトに合った設計を考える。
 
 ### クラスの命名規則
 
