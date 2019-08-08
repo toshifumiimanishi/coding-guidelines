@@ -6,7 +6,8 @@
 - **可読性の向上**：人の目は秩序を好むため、一貫性のあるマークアップは開発者のストレスを軽減する。
 
 ## HTML
-HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/multipage/) に準拠する。
+HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/multipage/) に準拠する。W3C と WHATWG の[合意](https://www.w3.org/blog/news/archives/7753)により、WHATWG が策定する HTML Living Standard が唯一の標準となる。
+
 
 ### 属性の記述順
 属性値は class、id、data-*、その他の属性の順序で記述する。
