@@ -14,6 +14,9 @@ HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/
 ### target="_blank" で開くリンクには rel="noopener" をつける
 `target="_blank"` で開いたページは、`window.opener` を使って親のページを操作できるため **フィッシング詐欺攻撃の脆弱性** がある。`rel="noopener"` を指定すれば、リンクをクリックして開いたページから `window.opener` で親のページを参照できなくなる。
 
+### img 要素には width, heihgt を明示しない
+レスポンシブデザインやリキッドデザインが主流の昨今において、CSS に `width`, `height` を指定することが多く、HTML の属性値に明示しない。画像サイズを明示することでレンダリングコストを抑制するメリットは、CSS で指定してもかまわない。
+
 ### パスはルート相対パスで指定する
 外部ファイルのインクルードに最適であり、パスの一括置換が可能であるためディレクトリ構造の変更に対応しやすい。
 
