@@ -30,10 +30,10 @@ WAI-ARIAは、ブラウザや支援技術が認識できる意味論を追加す
 ## CSS
 
 ### CSS 設計
-[FLOCSS](https://github.com/hiloki/flocss) をベースに各プロジェクトに合った設計を考える。
+[FLOCSS](https://github.com/hiloki/flocss) をベースに各プロジェクトに合った設計を考える。詳しくは[堅牢で保守的な最低限度の CSS 設計](https://qiita.com/toshifumiimanishi/items/289ff7a44054bcc39b09)を参照ください。
 
 ### クラスの命名規則
-基本的なクラスの命名には [BEM](https://en.bem.info/methodology/) を採用する。ただし、Element はアンダースコアひとつ、Modifier はハイフンひとつを接頭辞として運用する。
+基本的なクラスの命名には [BEM](https://en.bem.info/methodology/) を採用する。ただし、Element はアンダースコアひとつ、Modifier はハイフンひとつを接頭辞として運用する。また、BEM の命名規則の混在を防ぐため、単語間の区切りにダッシュやアンダースコアを使わない。
 
 ```css
 .Block_Element { ... }
