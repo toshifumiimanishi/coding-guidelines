@@ -27,6 +27,16 @@ HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/
 ### WAI-ARIA は必要な場合のみ使用する
 WAI-ARIAは、ブラウザや支援技術が認識できる意味論を追加する、ユーザーの理解を補助する技術である。真に意味論の提供は、HTML5 ベースのセマンティクスを使用すべき。ベンダーのサポート状況を鑑みて選定する。
 
+### 要処置事項は TODO 接頭辞でコメントする
+あとで手をつけることをソースコードにコメントする場合、`TODO: action item` の形式で記述する。
+```html
+<!-- TODO: remove optional tags -->
+<ul>
+  <li>Apples</li>
+  <li>Oranges</li>
+</ul>
+```
+
 ## CSS
 
 ### CSS 設計
