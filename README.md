@@ -21,6 +21,9 @@ HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/
 ### パスはルート相対パスで指定する
 外部ファイルのインクルードに最適であり、パスの一括置換が可能であるためディレクトリ構造の変更に対応しやすい。
 
+### Boolean 属性値は省略する
+Boolean 属性値は一貫して省略する。Boolean 属性は、属性が存在すれば true（真）、存在しなければ false（偽）になります。つまり、属性値はあってもなくても true（真）になります。値が空（e.g. `required=""`）でも true（真）になります。Boolean 属性値の一貫した省略は、その属性が Boolean 属性であることが明確になり、可読性が向上します。
+
 ### 可視ラベルのない要素に title 属性をつける
 フォーム・コントロールの要素（e.g. `<input>`, `<select>`）にラベルとなるテキストが見た目に存在しない場合、title 属性を用いてラベルを提供する。詳しくは [WCAG 2.1 の達成基準 1.3.1 情報及び関係性（レベル A）](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)を参照ください。
 
