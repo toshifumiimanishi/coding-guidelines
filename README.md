@@ -24,11 +24,19 @@ HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/
 ### Boolean 属性値は省略する
 Boolean 属性値は一貫して省略する。Boolean 属性は、属性が存在すれば true（真）、存在しなければ false（偽）になります。つまり、属性値はあってもなくても true（真）になります。値が空（e.g. `required=""`）でも true（真）になります。Boolean 属性値の一貫した省略は、その属性が Boolean 属性であることが明確になり、可読性が向上します。
 
+下記の記述はいずれも true（真）になります。
+
+```html
+<input required>
+<input required="">
+<input required="required">
+```
+
 ### 可視ラベルのない要素に title 属性をつける
 フォーム・コントロールの要素（e.g. `<input>`, `<select>`）にラベルとなるテキストが見た目に存在しない場合、title 属性を用いてラベルを提供する。詳しくは [WCAG 2.1 の達成基準 1.3.1 情報及び関係性（レベル A）](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)を参照ください。
 
-### WAI-ARIA は必要な場合のみ使用する
-WAI-ARIAは、ブラウザや支援技術が認識できる意味論を追加する、ユーザーの理解を補助する技術である。真に意味論の提供は、HTML5 ベースのセマンティクスを使用すべき。ベンダーのサポート状況を鑑みて選定する。
+### WAI-ARIA より HTML5 ベースのセマンティクスが望ましい
+WAI-ARIA は、ブラウザや支援技術が認識できる意味論を追加する、ユーザーの理解を補助する技術である。真に意味論の提供は、HTML5 ベースのセマンティクスを使用すべき。ベンダーのサポート状況を鑑みて選定する。
 
 ### 要処置事項は TODO 接頭辞でコメントする
 あとで手をつけることをソースコードにコメントする場合、`TODO: action item` の形式で記述する。
