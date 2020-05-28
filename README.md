@@ -104,11 +104,11 @@ CSS ハックは最終手段として、**最大限に別のアプローチを�
 原則、引用符は「'（シングルクォーテーション）」を使用しましょう。DOM の取得にセレクタをエスケープする手間が省けます。ただし、テンプレート文字列にプレースホルダーを含む場合は除きます。
 
 ```js
-console.log('hello world')    // ✓ ok
-console.log("hello world")    // ✗ avoid
-console.log(`hello world`)    // ✗ avoid
+console.log('hello world');    // ✓ ok
+console.log("hello world");    // ✗ avoid
+console.log(`hello world`);    // ✗ avoid
  
-console.log(`hello ${name}`)  // ✓ ok
+console.log(`hello ${name}`);  // ✓ ok
 ```
 
 ### 末尾カンマの許容
@@ -126,7 +126,7 @@ const objeck = {
   foo: 'foo',
   bar: 'bar',
   baz: 'baz,
-}
+};
 ```
 
 ## Accessibility
