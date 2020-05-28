@@ -111,6 +111,24 @@ console.log(`hello world`)    // ✗ avoid
 console.log(`hello ${name}`)  // ✓ ok
 ```
 
+### 末尾カンマの許容
+
+配列リテラル、オブジェクトリテラルの末尾カンマを許容します。末尾カンマは新たなプロパティを追加するときに最終行を修正することなく、新たな行を追加できます。これにより、バージョン管理の差分が明瞭化されます。
+
+```js
+const array = [
+  1,
+  2,
+  3,
+];
+
+const objeck = {
+  foo: 'foo',
+  bar: 'bar',
+  baz: 'baz,
+}
+```
+
 ## Accessibility
 
 ### 可視ラベルのない要素に title 属性をつける（レベル A）
