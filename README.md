@@ -129,6 +129,28 @@ const objeck = {
 };
 ```
 
+## TypeScript
+
+### enum（列挙型）の使用を控える
+
+enum（列挙型）の使用には思わぬ落とし穴がともなうため、列挙型の使用を非推奨にします。たとえば、enum は数値列挙があれば型安全性に欠けます。
+
+```ts
+enum Size {
+  Short,
+  Tall,
+  Grande,
+  Venti,
+}
+
+const coffee = Size.Short      // ✓ ok
+const espresso = Size['Tall']  // ✓ ok
+const frappuccino = Size[2]    // ✓ ok
+const tea = Size[100]          // ✓ ok（!!?）
+```
+
+上記のコード例によれば、`Size[100]` は取得できないはずですが、TypeScript はコンパイルエラーを出力しません。代わりに const enum を利用して、より安全なサブセットに制限することは可能ですが、enum 以外の代替手段で同様の振る舞い（e.g. Union 型）を実装可能です。
+
 ## Accessibility
 
 ### 可視ラベルのない要素に title 属性をつける（レベル A）
