@@ -16,7 +16,7 @@ HTML 構文は、WHATWG の [HTML Living Standard](https://html.spec.whatwg.org/
 `target="_blank"` で開いたページは、`window.opener` を使って親のページを操作できるため **フィッシング詐欺攻撃の脆弱性** がある。`rel="noopener"` を指定すれば、リンクをクリックして開いたページから `window.opener` で親のページを参照できなくなる。
 
 ### img 要素には width, heihgt を明示しない
-レスポンシブデザインやリキッドデザインが主流の昨今において、CSS に `width`, `height` を指定することが多く、HTML の属性値に明示しない。画像サイズを明示することでレンダリングコストを抑制するメリットは、CSS で指定してもかまわない。
+レスポンシブデザインやリキッドデザインが主流の昨今において CSS に `width`, `height` を指定することが多く、<sup id="annotated-1"><a href="#annotation-1">[注1]</a></sup>HTML の属性値に明示しない。画像サイズを明示することでレンダリングコストを抑制するメリットは、CSS で指定してもかまわない。
 
 ### パスはルート相対パスで指定する
 外部ファイルのインクルードに最適であり、パスの一括置換が可能であるためディレクトリ構造の変更に対応しやすい。
@@ -158,3 +158,7 @@ const tea = Size[100]          // ✓ ok（!!?）
 
 ### インタラクティブな要素にラベルづけ（レベル A）
 インタラクティブな要素にはアクセシブルな名前をつけて、支援技術で伝えれるようにすべきです。これは [WCAG 2.1 の達成基準 4.1.2「名前（name）・役割（role）及び値（value）」](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)に関連します。
+
+## 注釈
+
+1. <b><a id="annotation-1" href="#annotated-1">^</a></b> `<img>` 要素の `width`, `heihgt` 属性の指定は Google の UX 指標「Core Web Vitals」の Cumulative Layout Shift（CLS）に寄与します。
